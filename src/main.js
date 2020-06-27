@@ -4,7 +4,7 @@ import VueResource from 'vue-resource';
 
 
 Vue.use(VueResource);
-Vue.http.options.root = `https://vue-resource-http-175a5.firebaseio.com/data.json`;
+Vue.http.options.root = `https://vue-resource-http-175a5.firebaseio.com/`;
 Vue.http.interceptors.push((request, next) => {
   console.log(request);
   if (request.method === 'POST') {
